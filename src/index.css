@@ -1,13 +1,90 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  background-color: #cac9ce;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.card--main-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 20px;
+  width: 550px;
+  border-radius: 12px 12px 0px 0px;
+box-shadow: 0px 10px 5px 9px rgba(165,165,166,0.75);
+-webkit-box-shadow: 0px 10px 5px 9px rgba(165,165,166,0.75);
+-moz-box-shadow: 0px 10px 5px 9px rgba(165,165,166,0.75);
+}
+/*👉**************NAVBAR**************👈*/
+.navbar {
+  background: #f55a5a;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px 10px 0px 0px;
+}
+.navbar > img {
+  width: 24px;
+  height: 24px;
+}
+/*👉**************TRAVEL CARD**************👈*/
+.travel--container {
+  display: flex;
+  border-bottom: #cac9ce 2px solid;
+}
+.travel--image {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+  margin: 20px;
+}
+.travel--details {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+.pointer-maps {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.pointer-maps > p {
+  margin: 10px 10px 10px 5px;
+  font-weight: 400;
+}
+.googleMaps {
+  color: #918e9b;
+}
+.googleMaps:visited {
+  color: blue;
+}
+.title {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.dates {
+  font-weight: 700;
+  font-size: 10px;
+  padding-bottom: 0px;
+}
+.discription {
+  font-weight: 400;
+  font-size: 10px;
+  margin-right: 40px;
+  margin-top: 0px;
 }
