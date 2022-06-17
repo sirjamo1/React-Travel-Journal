@@ -1,17 +1,21 @@
 
 import "./App.css";
-import nameData from "./components/nameData.js"
-import Name from "./components/Name.js";
+import data from "./components/data.js"
+import TravelCard from "./components/TravelCard.js";
 
-function App() {
-  const firstAndLast = nameData.map(x => {
-    return <Name first={x.first} last={x.last} />
+
+export default function App() {
+  const travelJournalItems = data.map(item => {
+    return <TravelCard 
+    key={item.id}
+    item={item} />
+    
   })
   return (
     <>
-      {firstAndLast}
+      {travelJournalItems}
+      
     </>
   );
 }
 
-export default App;
