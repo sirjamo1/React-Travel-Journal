@@ -4,11 +4,11 @@ export default function TravelCard(props) {
   return (
     <div>
       <div>
-        <img src={`./public/images/${props.item.imageUrl}`} />
+        <img src={props.item.imageUrl} />
       </div>
       <div>
         <span>
-          <img src=""/>
+          <img src="" />
           <p>{props.item.location}</p>
           <a>{props.item.googleMapsUrl}</a>
         </span>
